@@ -1,0 +1,208 @@
+.bb2-bookblock {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.bb2-page {
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+}
+
+.bb2-vertical .bb2-page {
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.bb2-horizontal .bb2-page {
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	transform-origin: center top;
+}
+
+.bb2-page > div,
+.bb2-outer,
+.bb2-content,
+.bb2-inner {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+.bb2-vertical .bb2-content {
+	width: 200%;
+}
+
+.bb2-horizontal .bb2-content {
+	height: 200%;
+}
+
+.bb2-page > div {
+	width: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.bb2-page > div:not(:only-child) {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.bb2-vertical .bb2-back {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.bb2-horizontal .bb2-back {
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+
+.bb2-outer {
+	width: 100%;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.bb2-overlay, 
+.bb2-flipoverlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.bb2-flipoverlay {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* */
+
+.bb2-bookblock.bb2-vertical > div.bb2-page:first-child,
+.bb2-bookblock.bb2-vertical > div.bb2-page:first-child .bb2-back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.bb2-bookblock.bb2-horizontal > div.bb2-page:first-child,
+.bb2-bookblock.bb2-horizontal > div.bb2-page:first-child .bb2-back {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/* Content display */
+.bb2-vertical .bb2-front .bb2-content {
+	left: -100%;
+}
+
+.bb2-horizontal .bb2-front .bb2-content {
+	top: -100%;
+}
+
+/* Flipping classes */
+.bb2-vertical .bb2-flip-next,
+.bb2-vertical .bb2-flip-initial {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.bb2-vertical .bb2-flip-prev {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.bb2-horizontal .bb2-flip-next,
+.bb2-horizontal .bb2-flip-initial {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.bb2-horizontal .bb2-flip-prev {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.bb2-vertical .bb2-flip-next-end {
+	-webkit-transform: rotateY(-15deg);
+	-moz-transform: rotateY(-15deg);
+	transform: rotateY(-15deg);
+}
+
+.bb2-vertical .bb2-flip-prev-end {
+	-webkit-transform: rotateY(-165deg);
+	-moz-transform: rotateY(-165deg);
+	transform: rotateY(-165deg);
+}
+
+.bb2-horizontal .bb2-flip-next-end {
+	-webkit-transform: rotateX(15deg);
+	-moz-transform: rotateX(15deg);
+	transform: rotateX(15deg);
+}
+
+.bb2-horizontal .bb2-flip-prev-end {
+	-webkit-transform: rotateX(165deg);
+	-moz-transform: rotateX(165deg);
+	transform: rotateX(165deg);
+}
+
+.bb2-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	background: #FFF;
+}
+.bb2-item:first-child, .bb2-item:last-child {
+	background: #F7ECD6;
+}
+
+/* No JS */
+.no-js .bb2-bookblock, 
+.no-js ul.bb2-custom-grid li {
+	width: auto;
+	height: auto;
+}
+
+.no-js .bb2-item {
+	display: block;
+	position: relative;
+}
