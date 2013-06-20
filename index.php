@@ -10,7 +10,7 @@
 
 		<!-- CSS
 	  ================================================== -->
-		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" href="assets/css/playful.css">
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>

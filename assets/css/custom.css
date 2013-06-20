@@ -37,7 +37,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 .navbar .nav > li > a {
-    font-size: 15px!important;
+    font-size: 15px;
    	color: #FAF1DA;
    	text-shadow: #0E0A0A 0 1px 0;
    	margin-left: 5px;
@@ -53,9 +53,10 @@ body {
 	text-shadow: 0 1px 0 rgb(109, 100, 100);
 }
 .navbar-inner {
+	height: 48px;
 	background: #77312F;
 	border: 1px solid #401A19;
-	border-bottom: 4px solid #77312F;
+	/*border-bottom: 4px solid #77312F;*/
 	padding-left: 0;
 	padding-right: 0;
 	-webkit-border-radius: 0;
@@ -178,11 +179,12 @@ footer img {
 	-moz-box-shadow: 0 0 10px -2px #000;
 	-webkit-box-shadow: 0 0 10px -2px #000;
 	box-shadow: 0 0 10px -2px #000;
+}
 .thumbnail .caption {
 	padding-top: 0px;
 }
 .margin-none {
-	margin: 0 0 0;
+	margin: 0px 0px 0px;
 }
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 	background-image: url('images/fancybox_sprite.png');
