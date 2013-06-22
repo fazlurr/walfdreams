@@ -15,8 +15,8 @@
 		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 		//Email Content
 		$message = '<html><body style="width: 100%">';
-		//$message .= '<img src="' . $linkGambar . '" alt="" />';
-		$message .= '<table rules="all" style="color: #fff; border-color: #77312F;" cellpadding="10">';
+		$message .= '<img src="' . $linkGambar . '" alt="" />';
+		$message .= '<table rules="all" style="color: #fff; border-color: #662A28;" cellpadding="10">';
 		$message .= "<tr style='background: #77312F;'><td><strong>Name:</strong></td><td><strong>Message:</strong></td><tr>";
 		$message .= "<tr><td>" . strip_tags($nama) . "</td><td>" . strip_tags($pesan) . "</td></tr>";
 		$message .= "</table>";

@@ -8,7 +8,7 @@
 		<div class="jumbotron" style="padding-bottom: 10px;">
 			<div class="container width60">
 				<center><img src="assets/img/logo.png" style="padding-bottom: 30px;">
-				<p>Walfdreams is a company that sells the Teddy Bear with aromatherapy, Walf.</p>
+				<p>Walfdreams, Your Only Relaxation Pals</p>
 				</center>
 			</div>
 		</div>		
