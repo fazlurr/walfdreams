@@ -24,7 +24,7 @@
 		//Email Content
 		$message = '<html><body>';
 		$message .= '<img src="' . $linkGambar . '" alt="Website Change Request" />';
-		$message .= '<table rules="all" style="border-color: #77312F;" cellpadding="10">';
+		$message .= '<table rules="all" style="border-color: #662A28;" cellpadding="10">';
 		$message .= "<tr style='color: #FAF1DA; background: #77312F;'><td><strong>Product:</strong> </td><td>" . strip_tags($product) . "</td></tr>";
 		$message .= "<tr><td><strong>Aroma:</strong> </td><td>" . strip_tags($aroma) . "</td></tr>";
 		$message .= "<tr><td><strong>Amount:</strong> </td><td>" . strip_tags($jumlah) . "</td></tr>";
@@ -49,6 +49,7 @@
 		</div>
 	</div>
 	<div class="container confirm-box" style="max-width: 1070px;">
+		<div class="garis"></div>
 		<div class="row-fluid">
 			<div class="span4 thumbnail confirm-box" style="border:1px solid #8E7B66;">
 				<h3>Your Recent Transaction :</h3>

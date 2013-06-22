@@ -51,7 +51,7 @@ function get_html_navbar() {
 		          	<div class="nav-collapse collapse">
 		            	<ul class="nav pull-right">
 			              	<li class=""><a href="http://walfdreams.com/">HOME</a></li>
-			              	<li class=""><a href="story.php">STORY</a></li>
+			              	<li class=""><a href="story">STORY</a></li>
 			              	<li class=""><a href="store.php">STORE</a></li>
 			              	<li class=""><a href="howto.php">HOW TO</a></li>
 			              	<li class=""><a href="confirm.php">CONFIRM</a></li>
@@ -68,7 +68,7 @@ function get_html_navbar() {
 
 function get_html_footer() {
 ?>
-	<!-- Footer
+		<!-- Footer
     	================================================== -->
 		<footer class="footer">
 			<div class="container">

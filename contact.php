@@ -15,7 +15,7 @@
 		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 		//Email Content
 		$message = '<html><body style="width: 100%">';
-		$message .= '<img src="' . $linkGambar . '" alt="Website Change Request" />';
+		//$message .= '<img src="' . $linkGambar . '" alt="" />';
 		$message .= '<table rules="all" style="color: #fff; border-color: #77312F;" cellpadding="10">';
 		$message .= "<tr style='background: #77312F;'><td><strong>Name:</strong></td><td><strong>Message:</strong></td><tr>";
 		$message .= "<tr><td>" . strip_tags($nama) . "</td><td>" . strip_tags($pesan) . "</td></tr>";
@@ -64,10 +64,7 @@
 							<a href="https://twitter.com/WalfDreams" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @WalfDreams</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 						</p>
-						
-							<a class="btn btn-large" href="http://www.facebook.com/walfdreams"><i class="icon-facebook"></i> Walfdreams</a>
-							<a class="btn btn-large" href="http://www.twitter.com/walfdreams"><i class="icon-twitter"></i> @walfdreams</a>
-						
+							<a class="btn btn-large" href="http://www.facebook.com/walfdreams"><i class="icon-facebook"></i> Walfdreams</a> <a class="btn btn-large" href="http://www.twitter.com/walfdreams"><i class="icon-twitter"></i> @walfdreams</a>
 					</div>
 				</div>
 			</div>

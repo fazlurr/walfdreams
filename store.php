@@ -54,7 +54,6 @@
 		                    	<option value="grapefruit">Grapefruit</option>
 		                    	<option value="orange">Orange</option>
 		                    	<option value="lemon">Lemon</option>
-		                    	<option value="lavender">Lavender</option>
 		                    </select>
 		                    <button type="submit" class="btn btn-large btn-block"><i class="icon-shopping-cart"></i> Buy</button>
 	                	</form>
@@ -73,7 +72,6 @@
 		                    	<option value="wangi_1">Grapefruit</option>
 		                    	<option value="wangi_2">Orange</option>
 		                    	<option value="wangi_2">Lemon</option>
-		                    	<option value="wangi_2">Lavender</option>
 		                    </select>
 		                    <p><a class="btn btn-large btn-block disabled" disabled=""><i class="icon-shopping-cart"></i> Buy</a></p>
 	                	</form></p>
@@ -92,7 +90,6 @@
 		                    	<option value="wangi_1">Grapefruit</option>
 		                    	<option value="wangi_2">Orange</option>
 		                    	<option value="wangi_2">Lemon</option>
-		                    	<option value="wangi_2">Lavender</option>
 		                    </select>
 		                    <p><a class="btn btn-large btn-block disabled" disabled=""><i class="icon-shopping-cart"></i> Buy</a></p>
 	                	</form></p>

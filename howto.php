@@ -10,6 +10,7 @@
 		<div class="container">
 			<h1>How to Take Care of Walf</h1>
 			<p>4 easy steps</p>
+			<div class="garis"></div>
 			<img src="assets/img/how-to.png">
 		</div>
 	</div>

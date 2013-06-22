@@ -20,24 +20,24 @@
 	        	<!--Book 1-->
               <li class="span4">
                 <div class="thumbnail"> 
-                  	<img src="assets/img/thumb-1.png" alt="Cover">
+                  	<img src="assets/img/thumb-pro.png" alt="Cover">
                   	<div class="caption">
-	                    <center><h3>Book 1</h3>
-	                    <p>Adventure Starts Here!</p></center>
+	                    <center><h3>Prologue</h3>
+	                    <p></p></center>
 	                    <div class="ribbon-stitches"></div>
-	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/book-one/"><i class="icon-book"></i> Read</a>
+	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/prologue/"><i class="icon-book"></i> Read</a>
                   	</div>
                 </div>
               </li>
               <!--Book 2-->
               <li class="span4">
-                <div class="thumbnail disabled"> 
-                  	<img src="assets/img/logo.png" alt="Cover">
+                <div class="thumbnail"> 
+                  	<img src="assets/img/thumb-1.png" alt="Cover">
                   	<div class="caption">
-	                    <center><h3>Book 2</h3>
-	                    <p>Coming Soon</p></center>
-	                    <!--<div class="ribbon-stitches"></div>
-	                    <a class="btn btn-large btn-block" href="#"><i class="icon-book"></i> Read</a>-->
+	                    <center><h3>Chapter One</h3>
+	                    <p>Adventure Starts Here!</p></center>
+	                    <div class="ribbon-stitches"></div>
+	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/chapter-one/"><i class="icon-book"></i> Read</a>
                   	</div>
                 </div>
               </li>
