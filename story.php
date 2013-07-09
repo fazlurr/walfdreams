@@ -1,7 +1,8 @@
 <?php
 	include_once('init.php');
 	$title = 'Walfdreams | Story';
-	get_html_header($title);
+	GetHeader($title);
+	GetHeaderClosing();
 	get_html_navbar();
 ?>
 <!--Content-->
@@ -25,19 +26,19 @@
 	                    <center><h3>Prologue</h3>
 	                    <p></p></center>
 	                    <div class="ribbon-stitches"></div>
-	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/prologue/"><i class="icon-book"></i> Read</a>
+	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/prologue/"><i class="fwicon-book"></i> Read</a>
                   	</div>
                 </div>
               </li>
               <!--Book 2-->
               <li class="span4">
                 <div class="thumbnail"> 
-                  	<img src="assets/img/thumb-1.png" alt="Cover">
+                  	<a href="http://walfdreams.com/story/chapter-one/"><img src="assets/img/thumb-1.png" alt="Cover"></a>
                   	<div class="caption">
 	                    <center><h3>Chapter One</h3>
 	                    <p>Adventure Starts Here!</p></center>
 	                    <div class="ribbon-stitches"></div>
-	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/chapter-one/"><i class="icon-book"></i> Read</a>
+	                    <a class="btn btn-large btn-block" href="http://walfdreams.com/story/chapter-one/"><i class="fwicon-book"></i> Read</a>
                   	</div>
                 </div>
               </li>
@@ -49,7 +50,7 @@
 	                    <center><h3>Book 3</h3>
 	                    <p>Coming Soon</p></center>
 	                    <!--<div class="ribbon-stitches"></div>
-	                    <a class="btn btn-large btn-block" href="#"><i class="icon-book"></i> Read</a>-->
+	                    <a class="btn btn-large btn-block" href="#"><i class="fwicon-book"></i> Read</a>-->
                   	</div>
                 </div>
               </li>

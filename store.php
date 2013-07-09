@@ -1,7 +1,8 @@
 <?php
 	include_once('init.php');
 	$title = 'Walfdreams | Store';
-	get_html_header($title);
+	GetHeader($title);
+	GetHeaderClosing();
 	get_html_navbar();
 ?>
 <!--Content-->
@@ -10,7 +11,7 @@
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Ready to Adopt Walf ?</h1>
-				<p>Walf is ready to love you and help you relax.</p>
+				<p style="line-height: 2.25;">Walf is ready to love you and help you relax.</p>
 			</div>
 		</div>
 		<div class="garis"></div>
@@ -44,55 +45,41 @@
 			            </div>
 		        	</center>
                   	<div class="caption">
-	                    <h3>Walf</h3>
-	                    <p>A Teddy Bear with Aromatherapy</p>
+                  		<center>
+	                    <h3>Walf Plush</h3>
+	                    <h3>IDR 159,000</h3>
 	                    <div class="ribbon-stitches"></div>
 	                    <form name="" method="post" action="buy.php">
 	                    	<input type="hidden" name="product-name" value="Walf">
-	                    	<strong>Aroma : </strong>
-		                    <select name="aroma">
+	                    	<h4>Aroma :
+		                    <select name="aroma" id="aroma">
 		                    	<option value="grapefruit">Grapefruit</option>
 		                    	<option value="orange">Orange</option>
 		                    	<option value="lemon">Lemon</option>
-		                    </select>
-		                    <button type="submit" class="btn btn-large btn-block"><i class="icon-shopping-cart"></i> Buy</button>
+		                    </select></h4>
+		                    <button type="submit" class="btn btn-large btn-block"><i class="fwicon-shopping-cart"></i> Buy</button>
 	                	</form>
+	                	</center>
                   	</div>
                 </div>
               </li>
-              
+              <!-- Product 2 -->
               <li class="span4">
                 <div class="thumbnail">
-                  <img alt="Coming Soon" style="width: 365px; height: 400px;" src="assets/img/slide2.png">
+                  <img alt="Coming Soon" src="assets/img/logo.png" title="Coming Soon">
                   <div class="caption">
-                    <h3>Coming Soon</h3>
+                    <center><h3>Coming Soon</h3></center>
                     <div class="ribbon-stitches"></div>
-	                    	<strong>Aroma : </strong>
-		                    <select name="pilihan">
-		                    	<option value="wangi_1">Grapefruit</option>
-		                    	<option value="wangi_2">Orange</option>
-		                    	<option value="wangi_2">Lemon</option>
-		                    </select>
-		                    <p><a class="btn btn-large btn-block disabled" disabled=""><i class="icon-shopping-cart"></i> Buy</a></p>
-	                	</form></p>
                   </div>
                 </div>
               </li>
-              
+              <!-- Product 3 -->
               <li class="span4">
                 <div class="thumbnail">
-                  <img alt="Coming Soon" style="width: 365px; height: 400px;" src="assets/img/slide2.png">
+                  <img alt="Coming Soon" src="assets/img/logo.png" title="Coming Soon">
                   <div class="caption">
-                    <h3>Coming Soon</h3>
+                    <center><h3>Coming Soon</h3></center>
                     <div class="ribbon-stitches"></div>
-	                    	<strong>Aroma : </strong>
-		                    <select name="pilihan">
-		                    	<option value="wangi_1">Grapefruit</option>
-		                    	<option value="wangi_2">Orange</option>
-		                    	<option value="wangi_2">Lemon</option>
-		                    </select>
-		                    <p><a class="btn btn-large btn-block disabled" disabled=""><i class="icon-shopping-cart"></i> Buy</a></p>
-	                	</form></p>
                   </div>
                 </div>
               </li>
@@ -104,9 +91,11 @@
 <?php
 	get_html_footer();
 ?>
-<script type="text/javascript">
+<script>
 	$(document).ready(function(){
-  		$('.carousel').carousel();
+  		$('.carousel').carousel({
+  			'interval' : false
+  		});
   		$("a.fancybox").fancybox({
 			'transitionIn'	:	'elastic',
 			'transitionOut'	:	'elastic',

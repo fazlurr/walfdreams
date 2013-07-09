@@ -1,7 +1,8 @@
 <?php
 	include_once('init.php');
 	$title = 'Walfdreams | How To';
-	get_html_header($title);
+	GetHeader($title);
+	GetHeaderClosing();
 	get_html_navbar();
 ?>
 <!--Content-->
@@ -11,7 +12,21 @@
 			<h1>How to Take Care of Walf</h1>
 			<p>4 easy steps</p>
 			<div class="garis"></div>
-			<img src="assets/img/how-to.png">
+			<div class="row-fluid" id="howto">
+				<div class="span3">
+					<img src="assets/img/howto1.png" class="dashed-border">
+				</div>
+				<div class="span3">
+					<img src="assets/img/howto2.png" class="dashed-border">
+				</div>
+				<div class="span3">
+					<img src="assets/img/howto3.png" class="dashed-border">
+				</div>
+				<div class="span3">
+					<img src="assets/img/howto4.png" class="dashed-border">
+				</div>
+			</div>
+			<div class="garis"></div>
 		</div>
 	</div>
 </div>

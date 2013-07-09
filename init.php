@@ -1,5 +1,5 @@
 <?php
-function get_html_header($title) {
+function GetHeader($title) {
 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -12,25 +12,27 @@ function get_html_header($title) {
 	    <meta name="author" content="">
 
 		<!-- CSS
-	  ================================================== -->
-		<!--<link rel="stylesheet" href="assets/css/bootstrap.css">
-		<link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">-->
+	  	================================================== -->
 		<link rel="stylesheet" href="assets/css/bootstrap-combined.no-icons.min.css">
-		<link rel="stylesheet" href="assets/css/playful.css">
 		<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/animate.min.css">
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,700,600,300,800'>
-		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/css/book.css">
-		<link rel="stylesheet" href="assets/css/custom.css">
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<?php
+}
 
-		<!-- Favicons
-		================================================== -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-	</head>
+function GetHeaderClosing() {
+?>
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<!--<link rel="stylesheet" href="assets/css/playful.css">-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
 <?php
 }
 
@@ -72,10 +74,21 @@ function get_html_footer() {
     	================================================== -->
 		<footer class="footer">
 			<div class="container">
-				<center>
-					<img src="assets/img/logo.png" width="175px" height="175px">
-					<!--<p>Copyright &copy; 2013 Walfdreams&#8482;, All Rights Reserved.-->
-				</center>
+				<div class="row-fluid">
+					<div class="span4">
+						<h3>Connect With Us</h3>
+						<a href="http://www.facebook.com/walfdreams"><i class="fwicon-facebook fwicon-2x"></i></a>
+						<a href="http://www.twitter.com/walfdreams"><i class="fwicon-twitter fwicon-2x"></i></a>
+						<a href="mailto:hello@walfdreams.com"><i class="fwicon-envelope fwicon-2x"></i></a>
+					</div>
+					<div class="span4">
+						<center>
+							<img src="assets/img/logo.png" width="175px" height="175px">
+							<!--<p>Copyright &copy; 2013 Walfdreams&#8482;, All Rights Reserved.-->
+						</center>
+					</div>
+					<div class="span4"></div>
+				</div>
 			</div>
 		</footer>
 

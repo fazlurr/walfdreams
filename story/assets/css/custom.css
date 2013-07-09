@@ -4,23 +4,45 @@ body {
 	padding-right: 0;
 	padding-left: 0;
 }
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('pacifico-webfont.eot');
+    src: url('pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('pacifico-webfont.woff') format('woff'),
+         url('pacifico-webfont.ttf') format('truetype'),
+         url('pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .cover {
 	padding-top: 25px;
-	font-family: 'Lobster Two', cursive;
+	font-family: 'pacificoregular', cursive;
 	text-align: center;
 	font-size: 30px;
 }
 .bb-custom-side p {
-	font-size: 1.0em;
+	font-size: 1.3em;
 }
 .bb2-custom-side p {
 	font-size: 1.3em;
 }
 .bb-custom-firstpage > h1 {
-font-family: 'Lobster Two', cursive;
+	/*font-family: 'Lobster Two', cursive;*/
+	font-family: 'pacificoregular', cursive;
 }
 #font-kecil {
 	font-size: 0.95em;
+}
+#background-pro {
+	background: url('../images/prologue.jpg') no-repeat 0 0;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+}
+.bb-bookblock {
+	border-top: 65px solid #332a29;
+	border-bottom: 65px solid #332a29;
 }
 @media screen and (max-width: 61.75em){
 	.chapter-title {

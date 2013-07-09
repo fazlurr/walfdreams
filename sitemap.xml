@@ -11,7 +11,7 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://walfdreams.com/story.php</loc>
+  <loc>http://walfdreams.com/story/</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -35,8 +35,49 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
+  <loc>http://walfdreams.com/story.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/story/prologue/</loc>
+  <lastmod>2013-06-23T05:01:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/story/chapter-one/</loc>
+  <lastmod>2013-06-23T05:01:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
   <loc>http://walfdreams.com/book-one/</loc>
-  <lastmod>2013-06-18T17:00:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/story</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/store.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/howto.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/about.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/confirm.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/contact.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://walfdreams.com/book-one/story.php</loc>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>

@@ -68,11 +68,11 @@
 		                  <li data-target="#myCarousel" data-slide-to="1" class=""></li>
 		                </ol>
 		                <div class="carousel-inner">
-		                  	<div class="item">
-		                  		<a href="store.php"><img src="assets/img/store-teaser.jpg" alt="Depan"></a>
-		                  	</div>
 		                  	<div class="item active">
-		                  		<a href="story.php"><img src="assets/img/ch1teaser.jpg" alt="Belakang"></a>
+		                  		<a href="store.php"><img src="assets/img/walfdreams2.jpg" alt="Store"></a>
+		                  	</div>
+		                  	<div class="item">
+		                  		<a href="story.php"><img src="assets/img/ch1teaser.jpg" alt="Story"></a>
 		                  	</div>
 		                </div>
 		                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
