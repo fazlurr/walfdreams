@@ -1,9 +1,13 @@
 <?php
-	include_once('init.php');
-	$title = 'Walfdreams | How To';
-	GetHeader($title);
-	GetHeaderClosing();
-	get_html_navbar();
+	$title = "<title>Walfdreams | How To</title>";
+	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	include('inc/htmlopen.htm');
+	echo $title;
+	echo $desc;
+	include('inc/metas.htm');
+	include('inc/css.htm');
+	include('inc/headclose.htm');
+	include('inc/body.htm');
 ?>
 <!--Content-->
 <div class="down">
@@ -31,6 +35,6 @@
 	</div>
 </div>
 <?php
-	get_html_footer();
-	get_html_closing();
+	include('inc/footer.htm');
+	include('inc/htmlclose.htm');
 ?>

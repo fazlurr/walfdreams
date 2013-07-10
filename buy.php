@@ -6,11 +6,15 @@
 		$product = $_POST['product-name'];
 		$aroma = $_POST['aroma'];
 	}
-	include_once('init.php');
-	$title = 'Walfdreams | Buy';
-	GetHeader($title);
-	GetHeaderClosing();
-	get_html_navbar();
+	$title = "<title>Walfdreams | Buy</title>";
+	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	include('inc/htmlopen.htm');
+	echo $title;
+	echo $desc;
+	include('inc/metas.htm');
+	include('inc/css.htm');
+	include('inc/headclose.htm');
+	include('inc/body.htm');
 ?>
 <!--Content-->
 <div class="down">
@@ -27,7 +31,6 @@
 			            	<option value="grapefruit" <?php if($aroma=='grapefruit'){ echo 'selected';}?>/>Grapefruit</option>
 			            	<option value="orange" <?php if($aroma=='orange'){ echo 'selected';}?>/>Orange</option>
 			            	<option value="lemon" <?php if($aroma=='lemon'){ echo 'selected';}?>/>Lemon</option>
-			            	<option value="lavender" <?php if($aroma=='lavender'){ echo 'selected';}?>/>Lavender</option>
 			            </select>
 			        </td>
 			    </tr>
@@ -72,9 +75,7 @@
 		</center>
 	</div>
 </div>
-<?php
-	get_html_footer();
-?>
+<?php include('inc/footer.htm'); ?>
 <script>
 	$(document).ready(function() {
 		function displayVals() {
@@ -92,6 +93,4 @@
 	    displayVals();
 	});
 </script>
-<?php
-	get_html_closing();	
-?>
+<?php include('inc/htmlclose.htm'); ?>

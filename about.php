@@ -1,9 +1,13 @@
 <?php
-	include_once('init.php');
-	$title = 'Walfdreams | About';
-	GetHeader($title);
-	GetHeaderClosing();
-	get_html_navbar();
+	$title = "<title>Walfdreams | About</title>";
+	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	include('inc/htmlopen.htm');
+	echo $title;
+	echo $desc;
+	include('inc/metas.htm');
+	include('inc/css.htm');
+	include('inc/headclose.htm');
+	include('inc/body.htm');
 ?>
 	<div class="center">
 		<div class="jumbotron" style="padding-bottom: 10px;">
@@ -23,7 +27,8 @@
 			</div>
 		</div>
 	</div>
+
 <?php
-	get_html_footer();
-	get_html_closing();
+	include('inc/footer.htm');
+	include('inc/htmlclose.htm');
 ?>

@@ -1,10 +1,15 @@
 <?php
-	include_once('init.php');
-	$title = 'Walfdreams | Contact';
-	GetHeader($title);
-	GetHeaderClosing();
-	get_html_navbar();
+	$title = "<title>Walfdreams | Contact Us</title>";
+	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	include('inc/htmlopen.htm');
+	echo $title;
+	echo $desc;
+	include('inc/metas.htm');
+	include('inc/css.htm');
+	include('inc/headclose.htm');
+	include('inc/body.htm');
 ?>
+<!--Fb Like Script-->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -13,6 +18,7 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=134781766629888";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!--Content-->
 <div class="down">
 	<div class="container center">
 		<div class="row-fluid">
@@ -52,9 +58,7 @@
 		</div><!--row-fluid-->
 	</div>
 </div><br><br><br>
-<?php
-	get_html_footer();
-?>
+<?php include('inc/footer.htm'); ?>
 <!--<script src="assets/js/contact.js"></script>-->
 <script>
 	$(document).ready(function() {  
@@ -86,6 +90,4 @@
 		});
 	});
 </script>
-<?php
-	get_html_closing();
-?>
+<?php include('inc/htmlclose.htm'); ?>

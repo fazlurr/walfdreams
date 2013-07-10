@@ -1,9 +1,13 @@
 <?php
-	include_once('init.php');
-	$title = 'Walfdreams | Store';
-	GetHeader($title);
-	GetHeaderClosing();
-	get_html_navbar();
+	$title = "<title>Walfdreams | Store</title>";
+	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	include('inc/htmlopen.htm');
+	echo $title;
+	echo $desc;
+	include('inc/metas.htm');
+	include('inc/css.htm');
+	include('inc/headclose.htm');
+	include('inc/body.htm');
 ?>
 <!--Content-->
 <div class="down">
@@ -88,9 +92,7 @@
 	    </div><!--Row-Fluid-->
 	</div><!--Container-->
 </div><!--Down-->
-<?php
-	get_html_footer();
-?>
+<?php include('inc/footer.htm'); ?>
 <script>
 	$(document).ready(function(){
   		$('.carousel').carousel({
@@ -105,6 +107,4 @@
   		});
 	});
 </script>
-<?php
-	get_html_closing();	
-?>
+<?php include('inc/htmlclose.htm'); ?>
