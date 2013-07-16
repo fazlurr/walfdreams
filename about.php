@@ -1,6 +1,6 @@
 <?php
 	$title = "<title>Walfdreams | About</title>";
-	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	$desc = '<meta name="description" content="Walfdreams is a company producing and selling stuffed toys of Walfdreams story characters with aromatherapy">';
 	include('inc/htmlopen.htm');
 	echo $title;
 	echo $desc;

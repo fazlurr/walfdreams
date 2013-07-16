@@ -1,4 +1,5 @@
-/*	Header : ;
+/*=================================================
+	Header : ;
 	Body : ;
 	Btn-Pink : #FF8D80;
 	Light Yellow: #FFF5D6;
@@ -6,7 +7,8 @@
 	Limey: #D1E751;
 	Confirm Green: rgb(155, 211, 63) #9BD33F;
 	Confirm Green Pastel : #89E894;
-	Footer: ;*/
+	Footer: ;
+==================================================*/
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: #F7ECD6;
@@ -21,10 +23,33 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+       -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+       -moz-animation-fill-mode:forwards;
+    		animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:0.5s;
+       -moz-animation-duration:0.5s;
+    		animation-duration:0.5s;
+
+    -webkit-animation-delay: 0.3s;
+	   -moz-animation-delay: 0.3s;
+			animation-delay: 0.3s;
+}
 .confirm-box {
 	background-color: #9BD33F;
 	color: white;
-	padding: 0px 10px;
+	padding: 0 10px;
 	margin-bottom: 6px;
 	border: 1px solid #88C425;
 	cursor: pointer;
@@ -77,46 +102,98 @@ body {
    	text-shadow: 0 1px 0 #0E0A0A;
    	margin-left: 5px;
    	margin-right: 5px;
-   	margin-top: 4px;
+   	
+    margin-top: 4px;
 }
 .navbar .nav > li > a:hover {
 	color: #E55E5B;
 	text-shadow: 0 0 10px #FF8D80;
 }
 .navbar .brand {
-	color: rgb(255, 253, 253);
+	color:  #F9EAD7;
+	font-family: 'pacificoregular', cursive;
 	padding-left: 35px;
 	text-shadow: 0 1px 0 rgb(109, 100, 100);
+	margin-top: 2px;
+	margin-left: 0px;
+	font-size: 31px;
+}
+.brand:before, .brand:after {
+	content: '.';
+	position: absolute;
+	top: 29px;
+	font-size: 43px;
+}
+.brand:before {
+    left: 42px;
+	
+}
+.brand:after {
+    left: 229px;
+	
+}
+.navbar {
+	margin-left: 39px;
+}
+.navbar .container {
+	border-bottom: 4px solid #77312F;
 }
 .navbar-inner {
-	/*Don't Ever Put Height, height mengacaukan segalanya.*/
+	/*Don't Ever Put Height, height mengacaukan responsive nav.*/
 	background: #77312F;
-	border: 1px solid #401A19;
+	/*border: 1px solid #401A19;*/
+	border-top: none;
+    border-left: none;
+    border-right: none;
 	border-bottom: 4px solid #77312F;
 	padding-left: 0;
 	padding-right: 0;
 	border-radius: 0;
 }
+.navbar-inner:after {
+    box-sizing: border-box;
+}
+.navbar-inner:before {
+    content: '';
+    position: absolute;
+    top: 49px;         
+    left: 3px;
+    z-index: -1;
+    background: #77312F;
+    width: 35px;
+    height: 0;
+    border: 25px solid transparent;
+    border-left-color: #F7ECD6;
+}
+.navbar-inner:after {
+    content: '';	
+    top: 80px;
+	height: 0;
+	position:absolute;
+    border-top: 19px solid #3A1A1F;
+    border-left: 50px solid transparent;
+    z-index: -1;
+}
 .ribbon-stitches {
    margin-bottom: 12px;
    border-top: 1px dashed #760D0D;
-   -webkit-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-   	  -moz-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-           box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
+   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+   	  -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+           box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 }
 .ribbon-stitches-top {
    margin-top:2px;
    border-top: 1px dashed #760D0D;
-   -webkit-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-           box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+      -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+           box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 .ribbon-stitches-bottom {
    margin-bottom:2px;
    border-top: 1px dashed #760D0D;
-   -webkit-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-      -moz-box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
-           box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
+   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+      -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+           box-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 }
 .btn {
 	color: #FFF;
@@ -165,7 +242,7 @@ body {
 }
 .down {
 	padding-top: 15px;
-	/*min-height: 446px;*/
+	min-height: 425px;
 }
 .ribbon {
 	background: url(../img/ribbon.png) no-repeat;
@@ -214,23 +291,19 @@ body {
 		    box-shadow: 0 0 10px -2px #000;
 }
 .thumbnail .caption {
-	padding-top: 0px;
+	padding-top: 0;
 }
 .thumbnail h3:nth-child(2) {
     color: #FF8D80;
 }
 .margin-none {
-	margin: 0px 0px 0px;
+	margin: 0 0 0;
 }
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 	background-image: url('images/fancybox_sprite.png');
 }
-.width60 {
-	width: 60%;
-}
 .envelope {
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+	border-radius: 4px;
 	border: 1px solid #c7c7c7;
 	border-bottom-color: #aaa;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -268,6 +341,32 @@ body {
 .buy h1 {
 	font-size: 45px;
 }
+#howto .dashed-border {
+	border-radius: 55px;
+	-webkit-transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+       -moz-transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+        -ms-transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+         -o-transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+            transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000); /* ease-out */
+}
+#howto .dashed-border:hover {
+    box-shadow: 0 0 0 10px brown;
+}
+#contact-us form {
+	width: 100%;
+}
+#contact-us input, #contact-us textarea {
+	width: 100%;
+	height: 40px;
+}
+#contactform > input, #contactform > textarea {
+    box-sizing: border-box;
+}
+.row-fluid h1, .row h1, .row-fluid h2, .row h2, footer h3 {
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'pacificoregular', cursive;
+}
+/* Fancy Styles */
 .bottom-shadow {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
@@ -277,22 +376,8 @@ body {
 	border-radius: 2px;
 	border: 2px dashed #77312F;
 	border: 2px dashed #88C425;
-	padding: 0px 10px;
+	padding: 0 10px;
 	background-color: #FFF5D6;
-}
-#howto .dashed-border {
-	border-radius: 55px;
-}
-#contact-us form {
-	width: 100%;
-}
-#contact-us input, #contact-us textarea {
-	width: 94%;
-	height: 30px;
-}
-.row-fluid h1, .row h1, .row-fluid h2, .row h2, footer h3 {
-	/*font-family: 'Lobster', cursive;*/
-	font-family: 'pacificoregular', cursive;
 }
 .border-brown {
 	border: 4px solid brown;
@@ -300,9 +385,11 @@ body {
 .cream {
 	background-color: #FFF5D6;
 }
-select#aroma option[value="grapefruit"] { background-image:url(../img/icons/icon-grapes.png);     background-repeat: no-repeat;  background-position: 20px;}
-select#aroma option[value="orange"] { background-image:url(../img/icons/icon-orange.png); }
-select#aroma option[value="lemon"] { background-image:url(../img/icons/icon-lemon.png); }
+/*Footer*/
+.footer .container {
+	margin-left: 1%;
+	margin-right: 1%;
+}
 footer {
 	color: #F7ECD6;
 	/*font-size: 12px;*/
@@ -330,15 +417,15 @@ footer .fwicon-large, footer .fwicon-2x {
 	padding: 4px;
 }
 /*Media Queries*/
-@media (min-width: 980px){
+/*@media (min-width: 980px){
 	.navbar {
-		margin-left: 69px;
+		margin-left: 39px;
 	}
-}
+}*/
 @media (max-width: 979px){
-	.navbar {
-		margin-left: 69px;
-	}
+	/*.navbar {
+		margin-left: 39px;
+	}*/
 	.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a {
 		padding: 9px 15px;
 		font-weight: bold;
@@ -347,9 +434,6 @@ footer .fwicon-large, footer .fwicon-2x {
 		-moz-border-radius: 3px;
 		border-radius: 3px;
 		background-color: #fff;
-	}
-	.navbar .container {
-		border-bottom: 4px solid #77312F;
 	}
 	.jumbotron h1 {
 		font-size: 90px;

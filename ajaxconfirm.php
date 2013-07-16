@@ -1,6 +1,6 @@
 <?php
 	//Send Email Address to confirm@walfdreams.com
-	$to = "confirm@walfdreams.com";
+	$to = "hello@walfdreams.com";
 	$subject = "I Want to Adopt " . $product . "!";
 	$linkGambar = "http://walfdreams.com/assets/img/logo-small.png";
 	//Email Header
@@ -49,6 +49,6 @@
 	$message2 .= "</table>";
 	$message .= "<br>Please transfer the amount of total price to:<br>(BCA)<br>After the transaction is done, please send confirmation email by replying to this message:<br>-Your Name<br>-Your Adresses<br>-Your Phone Number<br>Money Transferred<br>-Transfer Receipt (photo)";
 	$message2 .= "</body></html>";
-	//Kirim Emailnya ke Server
+	//Send the Email
 	mail($to2,$subject2,$message2,$headers2);
 ?>

@@ -1,6 +1,6 @@
 <?php
 	$title = "<title>Walfdreams | Contact Us</title>";
-	$desc = '<meta name="description" content="Kami menjual boneka aromatherapy, Walfdreams">';
+	$desc = '<meta name="description" content="Feel free to email us to stay connected">';
 	include('inc/htmlopen.htm');
 	echo $title;
 	echo $desc;
@@ -35,10 +35,10 @@
 							<textarea name="message" rows="3" id="message" placeholder="Message" style="height: 99px" required></textarea>
 							<button type="submit" id="send" class="btn btn-large btn-block"><i class="fwicon-envelope"></i> Send</button>
 						</form>
-						<div id="loading" height="25%" style="display: none">
+						<div id="loading" height="44" style="display: none">
 							<center><img src="assets/img/load.gif"></center>
 						</div>
-						<div id="infobox" class="alert alert-success" style="display: none">
+						<div id="infobox" class="alert alert-success" style="height: 44px; display: none;">
 							Message Sent! <strong>Thank You</strong>.
 						</div>
 					</div>
@@ -62,31 +62,33 @@
 <!--<script src="assets/js/contact.js"></script>-->
 <script>
 	$(document).ready(function() {  
-		//$('#contactForm').submit(function(event) {
-			//event.preventDefault();
-		$('#send').click(function() {
-			$('#send').fadeOut(500);
+		$('form').submit(function(e) {
+			e.preventDefault();
+		// $('#send').click(function() {
+			$('#send').fadeOut(200);
 			setTimeout(function() {
 	      		$('#loading').show();
-	      	}, 500);
-			var name = $("input#name").val();
-			var email = $("input#email").val(); 
-			var phone = $("input#phone").val(); 
-			var message = $("input#message").val();  
+	      	}, 200);
+			var name = $("#name").val();
+			var email = $("#email").val(); 
+			var phone = $("#phone").val(); 
+			var message = $("#message").val();  
 			var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone + '&message=' + message;
 			$.ajax({
 				type: "POST",
 				url: "ajaxemail.php",
 				data: dataString,
 				success: function() {
-					$('#loading').fadeOut(500);
+					setTimeout(function() {
+	      				$('#loading').fadeOut(300);
+	      			}, 300);
 					setTimeout(function() {
 	      				$('#infobox').show();
 	      				$('#infobox').addClass('animated flipInX');
 	      			}, 500);
 			    }
 			});
-			return false;
+			//return false;
 		});
 	});
 </script>
